@@ -70,7 +70,7 @@ form.addEventListener('submit', function(event){
 });
 
 var i=0;
-    var images = ["course_populars.jpg", "course_populars2.jpg"];
+    var images = ["images/course_populars.jpg", "images/course_populars2.jpg"];
     var h2s = ["How to Learn: Strategies for Starting, Practicing & Mastering the Skills You’ve Always Wanted", "Productivity for Creatives: Build a System That Brings Out Your Best"];
     var ps = ["Mike Boyd", "Thomas Frank"];
     var time = 3000;
