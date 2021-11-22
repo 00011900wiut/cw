@@ -107,6 +107,7 @@ body {
 	border: 3px solid #a4a4a4;
 	background-color: #f6f6f6;
 	transition: 0.5s;
+	pointer-events: all;
 }
 .modal.active {
 	transform: translate(-50%, 20%) scale(1);
@@ -196,6 +197,11 @@ body {
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.4);
+	pointer-events: none;
+}
+
+.overlayactive {
+	pointer-events: all;
 }
 
 .menu {
@@ -417,9 +423,18 @@ body {
 
 .newCourses {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	margin: 50px 0;
+}
+
+.newCourses h2 {
 	font-size: 3em;
+}
+
+.newCourses p {
+	font-size: 1.5em;
+	margin: 0 15px;
 }
 
 .card {
@@ -810,6 +825,14 @@ body {
 		max-width: 600px;
 	}
 
+	.newCourses h2{
+		font-size: 2.5em;
+	}
+
+	.newCourses p {
+		font-size: 1.5em;
+	}
+
 	.first_content, .second_content {
 		max-width: 300px;
 	}
@@ -865,11 +888,11 @@ body {
 	.specials_main .specials_header p {
 		min-width: 400px;
 		margin-left: 160px;
-		font-size: 1.1em;
+		font-size: 1.3em;
 
 	}
 	.specials_main .specials_header h2{
-		font-size: 1.75em;
+		font-size: 2em;
 		margin-left: 215px;
 	}
 
@@ -889,7 +912,7 @@ body {
 
 	.populars_header p{
 		margin: 0 60px;
-		font-size: 0.9em;
+		font-size: 1.3em;
 		margin-bottom: 20px;
 	}
 
@@ -907,6 +930,14 @@ body {
 		padding-top: 20px;
 		max-width: 500px;
 		min-width: 500px;
+	}
+
+	.newCourses h2{
+		font-size: 2em;
+	}
+
+	.newCourses p {
+		font-size: 1.3em;
 	}
 
 	.about_header h2{
@@ -1070,6 +1101,14 @@ body {
 		padding-top: 20px;
 		max-width: 300px;
 		min-width: 300px;
+	}
+
+	.newCourses h2{
+		font-size: 1.5em;
+	}
+
+	.newCourses p {
+		font-size: 0.8em;
 	}
 
 	.card {
